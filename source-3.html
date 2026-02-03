@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+    
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch.umd.js"></script>
+        <meta charset="UTF-8">
+        <title>My 1st Mini Test 小网站 </title>
+
+        
+        
+            <div style="text-align: center;
+                padding: 40px;
+                font-size: 20px;">
+            <h3>test</h3>
+            Q1. 身边有什么工具<br>
+        
+            <img src="https://p3-pc-sign.douyinpic.com/tos-cn-i-0813c001/o8EteqgbNAEz9yBdAz9l5LC6HhACfAAa7RAINE~tplv-dy-aweme-images:q75.webp?biz_tag=aweme_images&amp;from=327834062&amp;lk3s=138a59ce&amp;s=PackSourceEnum_SEARCH&amp;sc=image&amp;se=false&amp;x-expires=1772236800&amp;x-signature=Y2rW45mP0B49CXwqwB3zye%2BdQ%2B4%3D" width="20%">
+            <div style="text-align: center;
+                padding: 40px;
+                font-size: 20px;">
+            <input type="radio" name="q1" id="ans1">剪刀
+            <input type="radio" name="q1" id="ans2">针线
+            <input type="radio" name="q1" id="ans3">熨烫机
+            <button onclick="question1()">Submit</button>
+            <p id="results1"></p>
+               
+               Q2. 个人还是多人参与裁剪<br>
+        
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl47qbwcWHo-ycdA2MeqviADCAg67hJtagVQ&amp;s" width="20%">
+            <div style="text-align: center;
+                padding: 40px;
+                font-size: 20px;">
+            <input type="radio" name="q2" id="ans4">个人
+            <input type="radio" name="q2" id="ans5">两人
+            <input type="radio" name="q2" id="ans6">多人
+            <button onclick="question2()">Submit</button>
+            <p id="results2"></p>
+            
+            Q3. 喜欢爸爸还是妈妈<br>
+        
+            <img src="https://stickershop.line-scdn.net/stickershop/v1/sticker/637928342/android/sticker.png" width="20%">
+            <div style="text-align: center;
+                padding: 40px;
+                font-size: 20px;">
+            <input type="radio" name="q3" id="ans7">爸爸
+            <input type="radio" name="q3" id="ans8">妈妈
+          
+            <button onclick="question3()">Submit</button>
+            <p id="results3">接受妈妈的制裁吧 <img src="https://stickershop.line-scdn.net/stickershop/v1/sticker/637928344/android/sticker.png" width="20%"></p>
+            
+
+                <script>function question1(){
+    var ans1 = document.getElementById("ans1");
+    var ans2 = document.getElementById("ans2");
+    var ans3 = document.getElementById("ans3");
+
+    if(ans2.checked){
+       document.getElementById("results1").innerText= "准备开始了吗？";
+    }else if(ans1.checked || ans3.checked){
+        document.getElementById("results1").innerHTML= "准备开始了嘛～ <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHl2QAASGueQiCOX2iM3vzIieh71Uf6CVcbg&s' width='20%'>";
+    }
+}
+function question2(){
+    var ans4 = document.getElementById("ans4");
+    var ans5 = document.getElementById("ans5");
+    var ans6 = document.getElementById("ans6");
+
+    if(ans5.checked){
+       document.getElementById("results2").innerText= "准备开始了吗？";
+    }else if(ans4.checked || ans6.checked){
+        document.getElementById("results2").innerHTML= "准备开始了嘛～ <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ62Yjj65Y6rg6tRcFWLjRB1nXDBkZu1Fsn_Q&s' width='20%'>";
+    }
+}
+function question3(){
+    var ans7 = document.getElementById("ans7");
+    var ans8 = document.getElementById("ans8");
+
+
+    if(ans7.checked){
+       document.getElementById("results3").innerHTML= "接受妈妈的制裁吧 <img src='https://stickershop.line-scdn.net/stickershop/v1/sticker/637928344/android/sticker.png' width='20%'>";
+    }else if(ans8.checked){
+        document.getElementById("results3").innerHTML= "接受爸爸的制裁吧～ <img src='https://stickershop.line-scdn.net/stickershop/v1/sticker/637928348/android/sticker.png' width='20%'>";
+    }
+}</script>
+            
+        
+    </div></div></div></div></body>
